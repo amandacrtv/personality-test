@@ -1,5 +1,22 @@
-// for red, green, and blue color values
-let r, g, b;
+
+//Toxiclibs Polygon2D class helper
+const Polygon2D = toxi.geom.Polygon2D;
+
+//floor square width
+const tile_w = 77/2;
+
+//floor square height
+const tile_h = 38;
+
+//complete floor height
+const floor_h = 50;
+
+//position
+let x, y, offsetX, offsetY;
+let p = createVector(0, 0);
+
+//font
+let font;
 
 function setup() {
   createCanvas(720, 400);
