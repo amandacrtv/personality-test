@@ -11,6 +11,9 @@ let gameBase;
 //room structure game obj
 let gameStruct;
 
+//game furniture structure array
+let gameFurniture;
+
 setup = () => {
 	createCanvas(1000, 600);
 	background(0);

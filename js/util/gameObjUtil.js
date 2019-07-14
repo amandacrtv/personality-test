@@ -23,7 +23,7 @@ const wallRightStr = 'assets/wall_r_1.png'; //right wall image
 
 let gameRoomObj;
 
-gameBaseInitialize = (gameBase, gameStruct) => {
+gameBaseInitialize = (gameBase) => {
     //initialize gameStruct obj
     gameStruct = new Array();
     //loop to create room structure object
@@ -65,10 +65,10 @@ gameBaseInitialize = (gameBase, gameStruct) => {
     return gameStruct;
 };
 
-gameBaseDisplay = (gameBase, gameStruct) => {
+gameBaseDisplay = (gameStruct) => {
     //loop to display room structure objects
-    for (i = 0; i < gameBase.length; i++) {
-        for (j = 0; j < gameBase[i].length; j++) {
+    for (i = 0; i < gameStruct.length; i++) {
+        for (j = 0; j < gameStruct[i].length; j++) {
             if (i == 0 && j == 0) continue;
             gameStruct[i][j].displayByPos();
         }
