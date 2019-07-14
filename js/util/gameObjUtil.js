@@ -12,22 +12,13 @@ let x, y, offsetX, offsetY;
 
 let p = createVector(0, 0);
 
-/*Defines room structure
-0 - floor
-1 - left wall
-2 - right wall*/
-let gameBase;
-
-//room structure game obj
-let gameStruct;
-
 const floorStr     = 'assets/floor_1.png'; //floor image
 const wallLeftStr  = 'assets/wall_l_1.png'; //left wall image
 const wallRightStr = 'assets/wall_r_1.png'; //right wall image
 
 let gameRoomObj;
 
-gameBaseInitialize = (gameBase, gameStruct, p) => {
+gameBaseInitialize = (gameBase, gameStruct) => {
     //initialize gameStruct obj
     gameStruct = new gameObj[gameBase.length][gameBase[0].length];
     //loop to create room structure object
