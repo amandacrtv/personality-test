@@ -3,7 +3,6 @@ class gameObj {
 
     constructor(s) {
         this.strImg = s; //image file name
-        this.obj = loadImage(this.strImg); //image
         this.poly = new Polygon2D(); //hitbox
         this.pos = createVector(0, 0); //isometric coordinates
     }
@@ -11,6 +10,7 @@ class gameObj {
     /* Transforms given cartesian position to isometric
         and calls method to define object hitbox */
     initialize (point) {
+        this.obj = loadImage(this.strImg); //image
         this.pos.x = point.x - point.y;
         this.pos.y = (point.x + point.y)/2;
         definePoly();
