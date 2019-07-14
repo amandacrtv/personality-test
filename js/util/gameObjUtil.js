@@ -20,10 +20,10 @@ let gameRoomObj;
 
 gameBaseInitialize = (gameBase, gameStruct) => {
     //initialize gameStruct obj
-    gameStruct = new gameObj[gameBase.length];
+    gameStruct = new Array();
     //loop to create room structure object
     for (i = 0; i < gameBase.length; i++) {
-        gameStruct[i] = new gameObj[gameBase[i].length];
+        gameStruct[i] = new Array();
         for (j = gameBase[i].length - 1; j >=0; j--) {
             if (i == 0 && j == 0) continue;
             switch (gameBase[i][j]) {
