@@ -7,6 +7,9 @@ class gameObj {
         this.pos = createVector(0, 0); //isometric coordinates
     }
 
+    //Defines object hitbox
+    definePoly () {}
+
     /* Transforms given cartesian position to isometric
         and calls method to define object hitbox */
     initialize (point) {
@@ -15,10 +18,7 @@ class gameObj {
         this.pos.y = (point.x + point.y)/2;
         definePoly();
     }
-
-    //Defines object hitbox
-    definePoly () {}
-
+    
     /* Display object by it's position 
         and considers global offset */
     displayByPos () {
