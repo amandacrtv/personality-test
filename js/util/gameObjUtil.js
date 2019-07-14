@@ -7,6 +7,11 @@ const tile_h = 38;
 //complete floor height
 const floor_h = 50;
 
+//floor width
+const wall_w = 49/2;
+//floor height
+const wall_h = 83;
+
 //position
 let x, y, offsetX, offsetY;
 
