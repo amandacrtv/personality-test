@@ -62,6 +62,7 @@ gameBaseInitialize = (gameBase, gameStruct) => {
             }
         }
     }
+    return gameStruct;
 };
 
 gameBaseDisplay = (gameBase, gameStruct) => {

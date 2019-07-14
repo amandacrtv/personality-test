@@ -26,7 +26,7 @@ setup = () => {
 		[1, 0, 0, 0, 0, 0, 0, 0],
 		[1, 0, 0, 0, 0, 0, 0, 0]
 	];
-	gameBaseInitialize(gameBase, gameStruct);
+	gameStruct = gameBaseInitialize(gameBase, gameStruct);
 	gameBaseDisplay(gameBase, gameStruct);
 
 };
