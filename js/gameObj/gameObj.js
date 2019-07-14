@@ -16,13 +16,13 @@ class gameObj {
         this.obj = loadImage(this.strImg); //image
         this.pos.x = point.x - point.y;
         this.pos.y = (point.x + point.y)/2;
-        definePoly();
+        this.definePoly();
     }
     
     /* Display object by it's position 
         and considers global offset */
     displayByPos () {
-        Image(this.obj, this.pos.x + offsetX, this.pos.y + offsetY);
+        image(this.obj, this.pos.x + offsetX, this.pos.y + offsetY);
     }
 
     //Verify if a point is inside obj hitbox
