@@ -1,5 +1,5 @@
 setup = () => {
-    createCanvas(1000, 600);
+    createCanvas(displayWidth, displayHeight);
     background(0);
     offsetX = width / 2;
     offsetY = height / 4;
