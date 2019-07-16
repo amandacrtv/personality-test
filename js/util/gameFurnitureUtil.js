@@ -203,7 +203,7 @@ showSpace = (x, y, i, j) => {
     if (i + x <= gameStruct.length && j + y <= gameStruct[i].length) {
         for (iAux = i; iAux < i + x; iAux++) {
             for (jAux = j; jAux < j + y; jAux++) {
-                gfx = new ToxiclibsSupport();
+                gfx = new ToxiclibsSupport(this);
                 gfx.polygon2D(gameStruct[iAux][jAux].poly);
             }
         }

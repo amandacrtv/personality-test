@@ -164,7 +164,7 @@ mouseOver = (i, j) => {
             gameObjFurniture[i][j] != null
         ) {
             fill(0, 0, 0, 20);
-            gfx = new ToxiclibsSupport();
+            gfx = new ToxiclibsSupport(this);
             gfx.polygon2D(gameStruct[i][j].poly);
         }
     }
