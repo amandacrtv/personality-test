@@ -1,40 +1,40 @@
 //selected and unselected menu icons
 let sIconObj;
-const strSIconObj = 'assets/_sIconObj.png';
+const strSIconObj = 'assets/sIconObj.png';
 let unIconObj;
-const strUnIconObj = 'assets/_unIconObj.png';
+const strUnIconObj = 'assets/unIconObj.png';
 
 //chairs menu page
 let itemsChair;
-const strItemsChair = 'assets/_chairs.png';
+const strItemsChair = 'assets/chairs.png';
 
 //bed menu page 1
 let itemsBed_1;
-const strItemsBed_1 = 'assets/_beds_1.png';
+const strItemsBed_1 = 'assets/beds_1.png';
 //bed menu page 2
 let itemsBed_2;
-const strItemsBed_2 = 'assets/_beds_2.png';
+const strItemsBed_2 = 'assets/beds_2.png';
 
 //dressers page 1
 let itemsDresser_1;
-const strItemsDresser_1 = 'assets/_dresser_1.png';
+const strItemsDresser_1 = 'assets/dresser_1.png';
 //dressers page 2
 let itemsDresser_2;
-const strItemsDresser_2 = 'assets/_dresser_2.png';
+const strItemsDresser_2 = 'assets/dresser_2.png';
 
 //others page 1
 let itemsOther_1;
-const strItemsOther_1 = 'assets/_other_1.png';
+const strItemsOther_1 = 'assets/other_1.png';
 //others page 2
 let itemsOther_2;
-const strItemsOther_2 = 'assets/_other_2.png';
+const strItemsOther_2 = 'assets/other_2.png';
 
 //decoration page 1
 let itemsDeco_1;
-const strItemsDeco_1 = 'assets/_deco_1.png';
+const strItemsDeco_1 = 'assets/deco_1.png';
 //decoration page 2
 let itemsDeco_2;
-const strItemsDeco_2 = 'assets/_deco_2.png';
+const strItemsDeco_2 = 'assets/deco_2.png';
 
 //store selected furniture
 let objSelMenu;

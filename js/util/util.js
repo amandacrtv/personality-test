@@ -46,7 +46,7 @@ let START_GAME = false;
 //identify if the test already has ended
 let GAME_END = false;
 
-const gfx = new ToxiclibsSupport();
+let gfx;
 
 class util {
     constructor() {}

@@ -5,9 +5,10 @@ setup = () => {
     offsetY = height / 4;
     font = loadFont('assets/fonts/VCR_OSD_MONO_1.001.ttf');
     textFont(font, 20);
-    roomSmall = loadImage('assets/_roomSmall.png');
-    roomMedium = loadImage('assets/_roomMedium.png');
-    roomFull = loadImage('assets/_roomFull.png');
+    roomSmall = loadImage('assets/roomSmall.png');
+    roomMedium = loadImage('assets/roomMedium.png');
+    roomFull = loadImage('assets/roomFull.png');
+    gfx = new ToxiclibsSupport();
 };
 
 draw = () => {
