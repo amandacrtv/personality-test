@@ -5,7 +5,7 @@ class fullBedFurniture extends gameFurniture {
         this.states.tileStates = new Array();
         this.states.stateImage = new Array();
         for (i = 0; i < 2; i++) {
-            if (i == 0) states.tileStates[i] = createVector(3, 2);
+            if (i == 0) this.states.tileStates[i] = createVector(3, 2);
             else this.states.tileStates[i] = createVector(2, 3);
             this.states.stateImage[i] = loadImage(
                 s + this.defineState(i) + '.png'

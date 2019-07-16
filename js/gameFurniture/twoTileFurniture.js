@@ -5,7 +5,7 @@ class twoTileFurniture extends gameFurniture {
         this.states.tileStates = new Array();
         this.states.stateImage = new Array();
         for (i = 0; i < 2; i++) {
-            if (i == 0) states.tileStates[i] = createVector(2, 1);
+            if (i == 0) this.states.tileStates[i] = createVector(2, 1);
             else this.states.tileStates[i] = createVector(1, 2);
             this.states.stateImage[i] = loadImage(
                 s + this.defineState(i) + '.png'
