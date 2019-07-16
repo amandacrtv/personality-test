@@ -13,6 +13,9 @@ let gameStruct;
 //game furniture structure array
 let gameFurniture;
 
+//camera offset
+let offsetX, offsetY;
+
 setup = () => {
     createCanvas(1000, 600);
     background(0);
