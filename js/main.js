@@ -8,7 +8,6 @@ setup = () => {
     roomSmall = loadImage('assets/roomSmall.png');
     roomMedium = loadImage('assets/roomMedium.png');
     roomFull = loadImage('assets/roomFull.png');
-    gfx = new ToxiclibsSupport();
 };
 
 draw = () => {
@@ -165,6 +164,7 @@ mouseOver = (i, j) => {
             gameObjFurniture[i][j] != null
         ) {
             fill(0, 0, 0, 20);
+            gfx = new ToxiclibsSupport();
             gfx.polygon2D(gameStruct[i][j].poly);
         }
     }

@@ -47,7 +47,3 @@ let START_GAME = false;
 let GAME_END = false;
 
 let gfx;
-
-class util {
-    constructor() {}
-}
