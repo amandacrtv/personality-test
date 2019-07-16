@@ -46,6 +46,6 @@ let START_GAME = false;
 //identify if the test already has ended
 let GAME_END = false;
 
-let strItemPage = 'assets/_chairs.png';
+let strItemPage = 'assets/chairs.png';
 
 let gfx;
