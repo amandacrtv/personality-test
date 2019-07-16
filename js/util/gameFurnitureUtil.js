@@ -199,7 +199,7 @@ hasSpaceInsert = (x, y, i, j) => {
 };
 
 //display object hitbox
-showSpace = (x, y, i, j, gameStruct) => {
+showSpace = (x, y, i, j) => {
     if (i + x <= gameStruct.length && j + y <= gameStruct[i].length) {
         for (iAux = i; iAux < i + x; iAux++) {
             for (jAux = j; jAux < j + y; jAux++) {
