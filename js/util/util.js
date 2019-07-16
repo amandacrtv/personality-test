@@ -18,7 +18,7 @@ let gameBase;
 let gameStruct;
 
 //game furniture structure array
-let gameFurniture;
+let gameFurnitureArr;
 
 //game furniture obj array
 let gameObjFurniture;

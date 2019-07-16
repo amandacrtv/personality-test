@@ -84,8 +84,8 @@ mousePressed = () => {
                             }
                         }
                         if (
-                            gameFurniture[i][j] != 0 &&
-                            gameFurniture[i][j] != 9 &&
+                            gameFurnitureArr[i][j] != 0 &&
+                            gameFurnitureArr[i][j] != 9 &&
                             gameObjFurniture[i][j] != null
                         ) {
                             if (
@@ -159,8 +159,8 @@ mouseOver = (i, j) => {
             );
         }
         if (
-            gameFurniture[i][j] != 0 &&
-            gameFurniture[i][j] != 9 &&
+            gameFurnitureArr[i][j] != 0 &&
+            gameFurnitureArr[i][j] != 9 &&
             gameObjFurniture[i][j] != null
         ) {
             fill(0, 0, 0, 20);
@@ -179,7 +179,7 @@ setEnviroment = enviromentType => {
                 [1, 0, 0, 0, 0],
                 [1, 0, 0, 0, 0]
             ];
-            gameFurniture = [
+            gameFurnitureArr = [
                 [0, 0, 0, 0, 0],
                 [0, 0, 0, 0, 0],
                 [0, 0, 0, 0, 0],
@@ -197,7 +197,7 @@ setEnviroment = enviromentType => {
                 [1, 0, 0, 0, 0, 0, 0, 0],
                 [1, 0, 0, 0, 0, 0, 0, 0]
             ];
-            gameFurniture = [
+            gameFurnitureArr = [
                 [0, 0, 0, 0, 0, 0, 0, 0],
                 [0, 0, 0, 0, 0, 0, 0, 0],
                 [0, 0, 0, 0, 0, 0, 0, 0],
@@ -220,7 +220,7 @@ setEnviroment = enviromentType => {
                 [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                 [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
             ];
-            gameFurniture = [
+            gameFurnitureArr = [
                 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -250,8 +250,8 @@ personalityTest = () => {
     for (i = 0; i < gameBase.length; i++) {
         for (j = 0; j < gameBase[i].length; j++) {
             if (
-                gameFurniture[i][j] != 0 &&
-                gameFurniture[i][j] != 9 &&
+                gameFurnitureArr[i][j] != 0 &&
+                gameFurnitureArr[i][j] != 9 &&
                 gameObjFurniture[i][j] != null
             ) {
                 switch (gameObjFurniture[i][j].personality) {

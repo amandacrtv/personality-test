@@ -59,19 +59,19 @@ const lamp_red = 'assets/lamp_red';
 //initialize game furniture obj array
 gameFurnitureInitialize = () => {
     gameObjFurniture = new Array();
-    for (i = 0; i < gameFurniture[0].length; i++) {
+    for (i = 0; i < gameFurnitureArr[0].length; i++) {
         gameObjFurniture[i] = new Array();
     }
 };
 
 //display game furniture
 gameFurnitureDisplay = () => {
-    for (i = 0; i < gameFurniture.length; i++) {
-        for (j = 0; j < gameFurniture[i].length; j++) {
+    for (i = 0; i < gameFurnitureArr.length; i++) {
+        for (j = 0; j < gameFurnitureArr[i].length; j++) {
             if (i == 0 && j == 0) continue;
             if (
-                gameFurniture[i][j] != 0 &&
-                gameFurniture[i][j] != 9 &&
+                gameFurnitureArr[i][j] != 0 &&
+                gameFurnitureArr[i][j] != 9 &&
                 gameObjFurniture[i][j] != null
             ) {
                 gameObjFurniture[i][j].displayByPosState();
@@ -85,7 +85,7 @@ gameFurnitureDisplay = () => {
 delFurniture = (g, x, y) => {
     for (i = x; i < x + g.states.tileStates[g.currState].x; i++) {
         for (j = y; j < y + g.states.tilesStates[g.currState].y; j++) {
-            gameFurniture[i][j] = 0;
+            gameFurnitureArr[i][j] = 0;
             gameObjFurniture[i][j] = null;
         }
     }
@@ -98,8 +98,8 @@ setFurniture = (g, x, y) => {
             if (i == x && j == y) {
                 g.initialize(definePosByObjType(g, x, y));
                 gameObjFurniture[i][j] = g;
-                gameFurniture[i][j] = g.type;
-            } else gameFurniture[i][j] = 9;
+                gameFurnitureArr[i][j] = g.type;
+            } else gameFurnitureArr[i][j] = 9;
         }
     }
 };
@@ -184,11 +184,14 @@ insertObject = (i, j, g) => {
 //verify all map positions to find if can alocate new furniture
 hasSpaceInsert = (x, y, i, j) => {
     let set = false;
-    if (i + x <= gameFurniture.length && j + y <= gameFurniture[i].length) {
+    if (
+        i + x <= gameFurnitureArr.length &&
+        j + y <= gameFurnitureArr[i].length
+    ) {
         set = true;
         for (iAux = i; iAux < i + x; iAux++) {
             for (jAux = j; jAux < j + y; jAux++) {
-                if (gameFurniture[iAux][jAux] != 0) set = false;
+                if (gameFurnitureArr[iAux][jAux] != 0) set = false;
             }
         }
     }
