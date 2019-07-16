@@ -16,7 +16,7 @@ const floorStr = 'assets/floor_1.png'; //floor image
 const wallLeftStr = 'assets/wall_l_1.png'; //left wall image
 const wallRightStr = 'assets/wall_r_1.png'; //right wall image
 
-gameBaseInitialize = gameBase => {
+gameBaseInitialize = () => {
     //initialize gameStruct obj
     gameStruct = new Array();
     //gameObj auxiliar
@@ -60,10 +60,9 @@ gameBaseInitialize = gameBase => {
             }
         }
     }
-    return gameStruct;
 };
 
-gameBaseDisplay = gameStruct => {
+gameBaseDisplay = () => {
     //loop to display room structure objects
     for (i = 0; i < gameStruct.length; i++) {
         for (j = 0; j < gameStruct[i].length; j++) {

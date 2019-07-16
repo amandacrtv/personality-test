@@ -1,18 +1,3 @@
-//identify if menu is selected
-let MENU_SHOW = false;
-
-//identify if a furniture has been selected
-let OBJ_SEL_SHOW = false;
-
-//identify if user has selected a room
-let START_GAME = false;
-
-//identify if the test already has ended
-let GAME_END = false;
-
-//store which menu page is selected
-let strItemPage = 'assets/_chairs.png';
-
 //selected and unselected menu icons
 let sIconObj;
 const strSIconObj = 'assets/_sIconObj.png';
@@ -596,10 +581,10 @@ showItemSel = () => {
         text('(Press D to delete or K to unselect)', 20, 580);
         fill(0, 0, 0, 20);
         showSpace(
-            gameObjFurniture[selItem.x][selItem.y].states.tiles_states[
+            gameObjFurniture[selItem.x][selItem.y].states.tilesStates[
                 gameObjFurniture[selItem.x][selItem.y].currState
             ].x,
-            gameObjFurniture[selItem.x][selItem.y].states.tiles_states[
+            gameObjFurniture[selItem.x][selItem.y].states.tilesStates[
                 gameObjFurniture[selItem.x][selItem.y].currState
             ].y,
             selItem.x,

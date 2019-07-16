@@ -56,22 +56,16 @@ const lamp_purple = 'assets/lamp_purple';
 const lamp_green = 'assets/lamp_green';
 const lamp_red = 'assets/lamp_red';
 
-const gfx = new ToxiclibsSupport();
-
-//selected item vector
-let selItem = createVector(0, 0);
-
 //initialize game furniture obj array
 gameFurnitureInitialize = () => {
     gameObjFurniture = new Array();
     for (i = 0; i < gameFurniture[0].length; i++) {
         gameObjFurniture[i] = new Array();
     }
-    return gameObjFurniture;
 };
 
 //display game furniture
-gameFurnitureDisplay = (gameFurniture, gameObjFurniture) => {
+gameFurnitureDisplay = () => {
     for (i = 0; i < gameFurniture.length; i++) {
         for (j = 0; j < gameFurniture[i].length; j++) {
             if (i == 0 && j == 0) continue;
@@ -88,7 +82,7 @@ gameFurnitureDisplay = (gameFurniture, gameObjFurniture) => {
 };
 
 //delete furniture
-delFurniture = (g, x, y, gameFurniture, gameObjFurniture) => {
+delFurniture = (g, x, y) => {
     for (i = x; i < x + g.states.tileStates[g.currState].x; i++) {
         for (j = y; j < y + g.states.tilesStates[g.currState].y; j++) {
             gameFurniture[i][j] = 0;
@@ -98,7 +92,7 @@ delFurniture = (g, x, y, gameFurniture, gameObjFurniture) => {
 };
 
 //insert furniture
-setFurniture = (g, x, y, gameFurniture, gameObjFurniture) => {
+setFurniture = (g, x, y) => {
     for (i = x; i < x + g.states.tilesStates[g.currState].x; i++) {
         for (j = y; j < y + g.states.tilesStates[g.currState].y; j++) {
             if (i == x && j == y) {
@@ -171,7 +165,7 @@ definePosByObjType = (g, i, j) => {
 };
 
 //verify if object has space to be inserted and insert
-insertObject = (i, j, g, gameFurniture, gameObjFurniture) => {
+insertObject = (i, j, g) => {
     if (
         hasSpaceInsert(
             g.states.tilesStates[g.currState].x,
@@ -180,7 +174,7 @@ insertObject = (i, j, g, gameFurniture, gameObjFurniture) => {
             j
         )
     ) {
-        setFurniture(g, i, j, gameFurniture, gameObjFurniture);
+        setFurniture(g, i, j);
         OBJ_SEL_SHOW = false;
         objSelMenu = null;
         selItem.set(i, j);
