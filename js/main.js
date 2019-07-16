@@ -1,4 +1,3 @@
-
 //font
 let font;
 
@@ -15,26 +14,24 @@ let gameStruct;
 let gameFurniture;
 
 setup = () => {
-	createCanvas(1000, 600);
-	background(0);
-	offsetX = width/2;
-	offsetY = height/4;
-	gameBase = 
-	[
-		[0, 2, 2, 2, 2, 2, 2, 2],
-		[1, 0, 0, 0, 0, 0, 0, 0],
-		[1, 0, 0, 0, 0, 0, 0, 0],
-		[1, 0, 0, 0, 0, 0, 0, 0],
-		[1, 0, 0, 0, 0, 0, 0, 0],
-		[1, 0, 0, 0, 0, 0, 0, 0],
-		[1, 0, 0, 0, 0, 0, 0, 0]
-	];
-	gameStruct = gameBaseInitialize(gameBase, gameStruct);
-	gameBaseDisplay(gameBase, gameStruct);
-
+    createCanvas(1000, 600);
+    background(0);
+    offsetX = width / 2;
+    offsetY = height / 4;
+    gameBase = [
+        [0, 2, 2, 2, 2, 2, 2, 2],
+        [1, 0, 0, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0]
+    ];
+    gameStruct = gameBaseInitialize(gameBase);
+    gameBaseDisplay(gameStruct);
 };
 
 draw = () => {
-	background(0);
-	gameBaseDisplay(gameBase, gameStruct);
+    background(0);
+    gameBaseDisplay(gameStruct);
 };
