@@ -140,15 +140,15 @@ mouseOver = (i, j) => {
             let mouse = definePosByObjType(objSelMenu, mouseX, mouseY);
             if (
                 hasSpaceInsert(
-                    objSelMenu.states.tilesStates[objSelMenu.currState].x,
-                    objSelMenu.states.tilesStates[objSelMenu.currState].y,
+                    objSelMenu.states.tileStates[objSelMenu.currState].x,
+                    objSelMenu.states.tileStates[objSelMenu.currState].y,
                     i,
                     j
                 )
             )
                 showSpace(
-                    objSelMenu.states.tilesStates[objSelMenu.currState].x,
-                    objSelMenu.states.tilesStates[objSelMenu.currState].y,
+                    objSelMenu.states.tileStates[objSelMenu.currState].x,
+                    objSelMenu.states.tileStates[objSelMenu.currState].y,
                     i,
                     j
                 );

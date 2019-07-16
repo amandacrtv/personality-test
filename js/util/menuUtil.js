@@ -581,10 +581,10 @@ showItemSel = () => {
         text('(Press D to delete or K to unselect)', 20, 580);
         fill(0, 0, 0, 20);
         showSpace(
-            gameObjFurniture[selItem.x][selItem.y].states.tilesStates[
+            gameObjFurniture[selItem.x][selItem.y].states.tileStates[
                 gameObjFurniture[selItem.x][selItem.y].currState
             ].x,
-            gameObjFurniture[selItem.x][selItem.y].states.tilesStates[
+            gameObjFurniture[selItem.x][selItem.y].states.tileStates[
                 gameObjFurniture[selItem.x][selItem.y].currState
             ].y,
             selItem.x,

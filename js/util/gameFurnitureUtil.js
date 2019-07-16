@@ -84,7 +84,7 @@ gameFurnitureDisplay = () => {
 //delete furniture
 delFurniture = (g, x, y) => {
     for (i = x; i < x + g.states.tileStates[g.currState].x; i++) {
-        for (j = y; j < y + g.states.tilesStates[g.currState].y; j++) {
+        for (j = y; j < y + g.states.tileStates[g.currState].y; j++) {
             gameFurnitureArr[i][j] = 0;
             gameObjFurniture[i][j] = null;
         }
@@ -93,8 +93,8 @@ delFurniture = (g, x, y) => {
 
 //insert furniture
 setFurniture = (g, x, y) => {
-    for (i = x; i < x + g.states.tilesStates[g.currState].x; i++) {
-        for (j = y; j < y + g.states.tilesStates[g.currState].y; j++) {
+    for (i = x; i < x + g.states.tileStates[g.currState].x; i++) {
+        for (j = y; j < y + g.states.tileStates[g.currState].y; j++) {
             if (i == x && j == y) {
                 g.initialize(definePosByObjType(g, x, y));
                 gameObjFurniture[i][j] = g;
@@ -168,8 +168,8 @@ definePosByObjType = (g, i, j) => {
 insertObject = (i, j, g) => {
     if (
         hasSpaceInsert(
-            g.states.tilesStates[g.currState].x,
-            g.states.tilesStates[g.currState].y,
+            g.states.tileStates[g.currState].x,
+            g.states.tileStates[g.currState].y,
             i,
             j
         )
